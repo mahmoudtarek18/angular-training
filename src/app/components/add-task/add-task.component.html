@@ -1,0 +1,4 @@
+<input #taskTitle type="text" class="form-control" placeholder="Task Title">
+<textarea #taskDes class="form-control" placeholder="Task descrption"></textarea>
+<button class="btn btn-primary" (click)="saveTask(taskTitle, taskDes)">Save</button>
+<a class="btn btn-danger" routerLink="/">Cancel</a>
