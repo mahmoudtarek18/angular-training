@@ -4,7 +4,7 @@
             Can't Match any Id
         </p>
     </div>
-  {{task.title}}
+
     <div *ngIf="taskId && task">
             <input  type="text" class="form-control" placeholder="Task Title" [(ngModel)] ="task.title">
             <textarea  class="form-control" placeholder="Task descrption" [(ngModel)] ="task.descrption"></textarea>
