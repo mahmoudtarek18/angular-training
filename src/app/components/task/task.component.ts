@@ -19,9 +19,8 @@ export class TaskComponent implements OnInit {
 
   ngOnInit() {
     this.taskId = this.route.snapshot.paramMap.get('id');
-    setTimeout(() => {
-      this.task = this.tasksSer.tasks[this.taskId]
-    }, 1000);
+    this.task = this.tasksSer.tasks[this.taskId]
+   
   }
 
   saveTask(){
